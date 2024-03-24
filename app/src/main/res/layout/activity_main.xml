@@ -6,4 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabPaddingBottom="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="0dp"
+        app:tabIndicatorHeight="0dp"
+
+        android:background="@color/purple"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/first_screen_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_sceen"
+            android:icon="@drawable/baseline_view_list_24"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/second_screen_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second_screen"
+            android:icon="@drawable/baseline_view_list_24"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/third_screen_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/third_screen"
+            android:icon="@drawable/baseline_view_list_24"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/fourth_screen_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fourth_screen"
+            android:icon="@drawable/baseline_view_list_24"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/fifth_screen_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fifth_screen"
+            android:icon="@drawable/baseline_view_list_24"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

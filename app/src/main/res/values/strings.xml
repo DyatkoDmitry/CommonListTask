@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CommonListTask</string>
-    <string name="first_sceen">First</string>
-    <string name="second_screen">Second</string>
-    <string name="third_screen">Third</string>
-    <string name="fourth_screen">Fourth</string>
-    <string name="fifth_screen">Fifth</string>
+    <string name="first_sceen">First Screen</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="third_screen">Third Screen</string>
+    <string name="fourth_screen">Fourth Screen</string>
+    <string name="fifth_screen">Fifth Screen</string>
 </resources>
