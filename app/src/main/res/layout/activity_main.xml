@@ -10,18 +10,13 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        app:tabGravity="fill"
-        app:tabMode="scrollable"
-        app:tabPaddingBottom="0dp"
-        app:tabPaddingEnd="0dp"
-        app:tabPaddingStart="0dp"
-        app:tabPaddingTop="0dp"
-        app:tabIndicatorHeight="0dp"
-
         android:background="@color/purple"
-        app:tabIndicatorColor="@android:color/white"
+
+        app:tabTextColor="@color/light_purple"
         app:tabSelectedTextColor="@color/white"
+        app:tabIconTint="@color/m3_tabs_icon_color"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="0dp"
         app:layout_constraintVertical_bias="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
