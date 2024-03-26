@@ -6,4 +6,103 @@
     <string name="fourth">Fourth</string>
     <string name="fifth">Fifth</string>
     <string name="other">Other</string>
+
+    <string-array name="first_name">
+        <item>Aubrey</item>
+        <item>Bailey</item>
+        <item>Bellamy</item>
+        <item>Blair</item>
+        <item>Cassidy</item>
+        <item>Cedar</item>
+        <item>Courtney</item>
+        <item>Dallas</item>
+        <item>Dale</item>
+        <item>Darcy</item>
+        <item>Echo</item>
+        <item>Gray</item>
+        <item>Harley</item>
+        <item>Haven</item>
+        <item>Holland</item>
+        <item>Kendall</item>
+        <item>Lane</item>
+        <item>Lennox</item>
+        <item>Loyal</item>
+        <item>Marley</item>
+        <item>Morgan</item>
+        <item>Navy</item>
+        <item>Ocean</item>
+        <item>Palmer</item>
+        <item>Reef</item>
+        <item>Rory</item>
+        <item>Salem</item>
+        <item>Sloan</item>
+        <item>Robbie</item>
+        <item>Taylor</item>
+    </string-array>
+
+    <string-array name="last_name">
+        <item>Adler</item>
+        <item>Anderson</item>
+        <item>Beckett</item>
+        <item>Brady</item>
+        <item>Carson</item>
+        <item>Cohen</item>
+        <item>Cooper</item>
+        <item>Duncan</item>
+        <item>Finley</item>
+        <item>Hendrix</item>
+        <item>Hutton</item>
+        <item>Jones</item>
+        <item>Mason</item>
+        <item>Miller</item>
+        <item>Nash</item>
+        <item>Penn</item>
+        <item>Shaw</item>
+        <item>Smith</item>
+        <item>Stone</item>
+        <item>Walker</item>
+        <item>Wiley</item>
+        <item>Wilson</item>
+        <item>Bardot</item>
+        <item>Blaine</item>
+        <item>Cameron</item>
+        <item>Campbell</item>
+        <item>Ellis</item>
+        <item>Emerson</item>
+        <item>Kennedy</item>
+        <item>Kim</item>
+    </string-array>
+
+    <string-array name="description">
+        <item> Friendly, funny, gentle, generous, courageous, self-confident, shy, silly</item>
+        <item> Generous, courageous, self-confident, shy, silly, sincere, dynamic</item>
+        <item> Self-confident, shy, silly, sincere, dynamic, imaginative, efficient, talkative, amusing, bright</item>
+        <item> Silly, sincere, dynamic, imaginative, efficient, talkative</item>
+        <item> Imaginative, efficient, talkative, amusing, bright, brave, thoughtful</item>
+        <item> Efficient, talkative, amusing, bright, brave, thoughtful, emotional</item>
+        <item> Talkative, amusing, bright</item>
+        <item> Amusing, bright, brave, thoughtful, emotional, supportive</item>
+        <item> Bright, brave, thoughtful, emotional, supportive, warmhearted, wise, witty, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Brave, thoughtful, emotional, supportive, warmhearted, wise, witty, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Thoughtful, emotional, supportive, warmhearted, wise, witty, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Emotional, supportive, warmhearted, wise, witty, pessimistic, unlucky, introverted</item>
+        <item> Supportive, warmhearted, wise, witty, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Warmhearted, wise, witty, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Wise, witty, pessimistic, unlucky, introverted</item>
+        <item> Happy, tired, exhausted, desperate, sad</item>
+        <item> Tired, exhausted, desperate, sad, upset, annoyed, mad, angry, furious, excited, bored, nervous, stressed, anxious, relaxed</item>
+        <item> Exhausted, desperate, sad, upset, annoyed, mad, angry, furious, excited, bored</item>
+        <item> Desperate, sad, upset, annoyed, mad, angry, furious, excited, bored, nervous, stressed, anxious, relaxed, well-rested, sleepy, serene</item>
+        <item> Sad, upset, annoyed, mad, angry, furious, excited, bored, nervous, stressed, anxious, relaxed, well-rested, sleepy</item>
+        <item> Upset, annoyed, mad, angry, furious, excited, bored, nervous, stressed, anxious, relaxed, well-rested, sleepy, serene</item>
+        <item> Annoyed, mad, angry, furious, excited, bored, nervous, stressed, anxious</item>
+        <item> Mad, angry, furious, excited, bored, nervous, stressed, anxious, relaxed, well-rested, sleepy</item>
+        <item> Angry, furious, excited, bored, nervous, stressed, anxious, relaxed, well-rested, sleepy, serene</item>
+        <item> Furious, excited, bored, nervous, stressed</item>
+        <item> Excited, bored, nervous, stressed, anxious, relaxed, well-rested, sleepy</item>
+        <item> Warmhearted, wise, witty, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Wise, witty, pessimistic, unlucky, introverted, unreliable, bored, nervous, stressed, anxious, relaxed, well-rested</item>
+        <item> Nervous, stressed, anxious, relaxed, well-rested, sleepy, serene, pessimistic, unlucky, introverted, unreliable</item>
+        <item> Introverted, unreliable, anxious, relaxed, well-rested </item>
+    </string-array>
 </resources>
