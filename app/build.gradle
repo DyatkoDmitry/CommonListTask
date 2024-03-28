@@ -46,4 +46,7 @@ dependencies {
 
     //For delegate viewModels()
     implementation "androidx.fragment:fragment-ktx:1.6.2"
+
+    //Glide
+    implementation "com.github.bumptech.glide:recyclerview-integration:4.14.2"
 }

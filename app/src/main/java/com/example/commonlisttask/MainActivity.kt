@@ -16,11 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewModel.hashCode()
-
         val viewPager = findViewById<ViewPager2>(R.id.pager)
-        val pagerAdapter = ViewPagerAdapter(this)
-        viewPager.adapter = pagerAdapter
+        val viewPagerAdapter = ViewPagerAdapter(this)
+        viewPager.adapter = viewPagerAdapter
 
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         val tabLayoutMediator = TabLayoutMediator(tabLayout, viewPager) {

@@ -1,5 +1,6 @@
 package com.example.commonlisttask
 
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
@@ -10,6 +11,13 @@ class ViewPagerAdapter(fragmentActivity: MainActivity): FragmentStateAdapter(fra
     }
 
     override fun createFragment(position: Int): Fragment {
-        return PageFragment.newInstance(position)
+        return createFragmentByPosition(position)
+    }
+
+    private fun createFragmentByPosition(position: Int): Fragment{
+        return when(position){
+            0 -> PageFragment.newInstance(position)
+            else -> PageFragment.newInstance(position)
+        }
     }
 }

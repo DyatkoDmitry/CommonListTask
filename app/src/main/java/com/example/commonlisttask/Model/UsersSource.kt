@@ -30,7 +30,7 @@ class UsersSource(val context: Context) {
         (0 until usersAmount).forEach { i ->
             val firstName = firstNames.get(i)
             val lastName = lastNames.get(i)
-            val age = Random.nextInt(18,80)
+            val age = Random.nextInt(18,70)
             val sex = Sex.values().random()
             val description = descriptions.get(i)
             val user = User(firstName = firstName, lastName = lastName, age = age, sex = sex, description = description)
