@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.commonlisttask.Model.UsersSource
 import com.example.commonlisttask.RecyclerViewAdapters.FirstRecyclerViewAdapter
+import com.example.commonlisttask.RecyclerViewAdapters.SecondRecyclerViewAdapter
 
 class PageFragment : Fragment() {
 
@@ -35,13 +36,30 @@ class PageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
+        when(position){
+            0 -> setRecyclerViewForFirstList(recyclerView)
+            1 -> setRecyclerViewForSecondList(recyclerView)
+        }
+    }
+
+    private fun setRecyclerViewForFirstList(recyclerView: RecyclerView) {
         val firstRecyclerViewAdapter = FirstRecyclerViewAdapter(requireActivity(), UsersSource(requireActivity()).users)
+        recyclerView.adapter = firstRecyclerViewAdapter
         val linearLayoutManager = LinearLayoutManager(activity).apply {
             orientation = LinearLayoutManager.VERTICAL
         }
         recyclerView.layoutManager = linearLayoutManager
         recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, DividerItemDecoration.VERTICAL))
-        recyclerView.adapter = firstRecyclerViewAdapter
+    }
+
+    private fun setRecyclerViewForSecondList(recyclerView: RecyclerView) {
+        val secondRecyclerViewAdapter = SecondRecyclerViewAdapter(requireActivity(), UsersSource(requireActivity()).users)
+        recyclerView.adapter = secondRecyclerViewAdapter
+        val linearLayoutManager = LinearLayoutManager(activity).apply {
+            orientation = LinearLayoutManager.VERTICAL
+        }
+        recyclerView.layoutManager = linearLayoutManager
+        recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, DividerItemDecoration.VERTICAL))
     }
 
     companion object {

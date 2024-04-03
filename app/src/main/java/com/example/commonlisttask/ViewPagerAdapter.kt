@@ -11,13 +11,6 @@ class ViewPagerAdapter(fragmentActivity: MainActivity): FragmentStateAdapter(fra
     }
 
     override fun createFragment(position: Int): Fragment {
-        return createFragmentByPosition(position)
-    }
-
-    private fun createFragmentByPosition(position: Int): Fragment{
-        return when(position){
-            0 -> PageFragment.newInstance(position)
-            else -> PageFragment.newInstance(position)
-        }
+        return PageFragment.newInstance(position)
     }
 }
