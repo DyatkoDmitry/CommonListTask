@@ -59,7 +59,6 @@ class PageFragment : Fragment() {
             orientation = LinearLayoutManager.VERTICAL
         }
         recyclerView.layoutManager = linearLayoutManager
-        recyclerView.addItemDecoration(DividerItemDecoration(recyclerView.context, DividerItemDecoration.VERTICAL))
     }
 
     companion object {
