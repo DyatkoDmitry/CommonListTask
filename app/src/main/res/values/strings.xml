@@ -105,4 +105,15 @@
         <item> Nervous, stressed, anxious, relaxed, well-rested, sleepy, serene, pessimistic, unlucky</item>
         <item> Introverted, unreliable, anxious, relaxed, well-rested </item>
     </string-array>
+
+    <string-array name="third_list_titles">
+        <item>MY DOCTOR</item>
+        <item>MY CAREMANAGER</item>
+        <item>MY DIAGNOSIS</item>
+        <item>THERAPY PLAN</item>
+        <item>REMAINING PILLS</item>
+        <item>MY ORDERS</item>
+    </string-array>
+
+
 </resources>

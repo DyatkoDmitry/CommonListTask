@@ -6,4 +6,20 @@
     <color name="light_purple">#b98af9</color>
     <color name="grey">#8A8A8A</color>
     <color name="light_grey">#969696</color>
+
+    <color name="light_blue">#62B6AF</color>
+    <color name="light_green">#80B0D6</color>
+    <color name="blue">#29592B</color>
+    <color name="orange">#F44336</color>
+    <color name="red">#C667D6</color>
+    <color name="silver">#D9E849</color>
+
+    <array name="third_list_colors">
+        <item>#5AA6A0</item>
+        <item>#7DAED5</item>
+        <item>@color/blue</item>
+        <item>@color/orange</item>
+        <item>#AC62B8</item>
+        <item>#CEDD49</item>
+    </array>
 </resources>

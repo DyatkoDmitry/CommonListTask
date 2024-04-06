@@ -1,17 +1,20 @@
 package com.example.commonlisttask
 
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.commonlisttask.Model.UsersSource
 import com.example.commonlisttask.RecyclerViewAdapters.FirstRecyclerViewAdapter
 import com.example.commonlisttask.RecyclerViewAdapters.SecondRecyclerViewAdapter
+import com.example.commonlisttask.RecyclerViewAdapters.ThirdRecyclerViewAdapter
 
 class PageFragment : Fragment() {
 
@@ -39,6 +42,7 @@ class PageFragment : Fragment() {
         when(position){
             0 -> setRecyclerViewForFirstList(recyclerView)
             1 -> setRecyclerViewForSecondList(recyclerView)
+            2 -> setRecyclerViewForThirdList(recyclerView)
         }
     }
 
@@ -59,6 +63,16 @@ class PageFragment : Fragment() {
             orientation = LinearLayoutManager.VERTICAL
         }
         recyclerView.layoutManager = linearLayoutManager
+    }
+
+    private fun setRecyclerViewForThirdList(recyclerView: RecyclerView){
+        val thirdRecyclerViewAdapter = ThirdRecyclerViewAdapter(requireActivity())
+        recyclerView.adapter = thirdRecyclerViewAdapter
+        val gridLayoutManager = GridLayoutManager(activity,2)
+        recyclerView.layoutManager = gridLayoutManager
+        val thirdListItemDecoration = ThirdListItemDecoration(resources.getDimensionPixelSize(R.dimen.third_list_space))
+        recyclerView.addItemDecoration(thirdListItemDecoration)
+        recyclerView.setPadding(resources.getDimensionPixelSize(R.dimen.third_list_space)/2,0,resources.getDimensionPixelSize(R.dimen.third_list_space)/2,0)
     }
 
     companion object {
