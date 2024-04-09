@@ -23,7 +23,7 @@ class SecondRecyclerViewAdapter(val context: Context, val users:List<User>): Rec
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
-        val itemView = LayoutInflater.from(context).inflate(R.layout.second_screen_item,parent,false)
+        val itemView = LayoutInflater.from(context).inflate(R.layout.second_screen_item, parent,false)
         val vh = VH(itemView)
         return vh
     }

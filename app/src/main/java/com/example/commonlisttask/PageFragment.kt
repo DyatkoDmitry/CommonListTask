@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.commonlisttask.Model.UsersSource
 import com.example.commonlisttask.RecyclerViewAdapters.FirstRecyclerViewAdapter
+import com.example.commonlisttask.RecyclerViewAdapters.FourthRecyclerViewAdapter
 import com.example.commonlisttask.RecyclerViewAdapters.SecondRecyclerViewAdapter
 import com.example.commonlisttask.RecyclerViewAdapters.ThirdRecyclerViewAdapter
 
@@ -43,6 +44,7 @@ class PageFragment : Fragment() {
             0 -> setRecyclerViewForFirstList(recyclerView)
             1 -> setRecyclerViewForSecondList(recyclerView)
             2 -> setRecyclerViewForThirdList(recyclerView)
+            3 -> setRecyclerViewForFourthList(recyclerView)
         }
     }
 
@@ -73,6 +75,17 @@ class PageFragment : Fragment() {
         val thirdListItemDecoration = ThirdListItemDecoration(resources.getDimensionPixelSize(R.dimen.third_list_space))
         recyclerView.addItemDecoration(thirdListItemDecoration)
         recyclerView.setPadding(resources.getDimensionPixelSize(R.dimen.third_list_space)/2,0,resources.getDimensionPixelSize(R.dimen.third_list_space)/2,0)
+    }
+
+    private fun setRecyclerViewForFourthList(recyclerView: RecyclerView){
+        val fourthRecyclerViewAdapter = FourthRecyclerViewAdapter(requireActivity())
+        recyclerView.adapter = fourthRecyclerViewAdapter
+        val linearLayoutManager = LinearLayoutManager(activity).apply {
+            orientation = LinearLayoutManager.VERTICAL
+        }
+        recyclerView.layoutManager = linearLayoutManager
+        val fourthListItemDecoration = FourthListItemDecoration(resources.getDimensionPixelSize(R.dimen.fourth_list_space))
+        recyclerView.addItemDecoration(fourthListItemDecoration)
     }
 
     companion object {
