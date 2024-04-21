@@ -2,4 +2,5 @@
 <resources>
     <dimen name="third_list_space">16dp</dimen>
     <dimen name="fourth_list_space">16dp</dimen>
+    <dimen name="progress_bar">70dp</dimen>
 </resources>

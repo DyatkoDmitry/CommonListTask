@@ -6,6 +6,9 @@
     <string name="fourth">Fourth</string>
     <string name="fifth">Fifth</string>
     <string name="other">Other</string>
+    <string name="clear_recyclerview">Clear RecyclerView</string>
+    <string name="the_list_is_empty">The list is empty</string>
+    <string name="swipe_to_load_data">Swipe to load data</string>
 
     <string-array name="first_name">
         <item>Aubrey</item>

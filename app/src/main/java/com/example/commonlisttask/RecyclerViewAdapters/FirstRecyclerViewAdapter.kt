@@ -13,7 +13,9 @@ import com.example.commonlisttask.Model.Sex
 import com.example.commonlisttask.Model.User
 import com.example.commonlisttask.R
 
-class FirstRecyclerViewAdapter(val context: Context, val users: List<User>): RecyclerView.Adapter<FirstRecyclerViewAdapter.VH>() {
+class FirstRecyclerViewAdapter(val context: Context, var users: List<User>): RecyclerView.Adapter<FirstRecyclerViewAdapter.VH>() {
+
+    private var itemNumber = users.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH{
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.first_screen_item, parent,false)
@@ -21,7 +23,7 @@ class FirstRecyclerViewAdapter(val context: Context, val users: List<User>): Rec
         return viewHolder
     }
 
-    override fun getItemCount(): Int = users.size
+    override fun getItemCount(): Int = itemNumber
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         val user = users.get(position)
@@ -40,5 +42,16 @@ class FirstRecyclerViewAdapter(val context: Context, val users: List<User>): Rec
         val firstLine = itemView.findViewById<TextView>(R.id.first_line)
         val secondLine = itemView.findViewById<TextView>(R.id.second_line)
         val sideIcon = itemView.findViewById<ImageView>(R.id.side_icon)
+    }
+
+    fun setRecyclerViewAdapterisEmpty(){
+        itemNumber = 0
+        notifyDataSetChanged()
+    }
+
+    fun setNewData(newUsers: List<User>){
+        users = newUsers
+        itemNumber = users.size
+        notifyDataSetChanged()
     }
 }
